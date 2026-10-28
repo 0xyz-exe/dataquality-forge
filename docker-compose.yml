@@ -1,0 +1,48 @@
+version: '3.8'
+
+services:
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8000:8000"
+    environment:
+      - ENV=production
+      - DATABASE_URL=postgresql+psycopg://dquser:dqpass@postgres:5432/dataquality
+      - STORAGE_DIR=/app/data/storage
+      - REPORTS_DIR=/app/data/reports
+    volumes:
+      - dq_data:/app/data
+    depends_on:
+      postgres:
+        condition: service_healthy
+
+  web:
+    build:
+      context: ./apps/web
+      dockerfile: Dockerfile
+    ports:
+      - "3000:80"
+    depends_on:
+      - api
+
+  postgres:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_USER: dquser
+      POSTGRES_PASSWORD: dqpass
+      POSTGRES_DB: dataquality
+    volumes:
+      - pg_data:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U dquser -d dataquality"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+volumes:
+  dq_data:
+  pg_data:

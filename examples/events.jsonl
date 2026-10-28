@@ -1,0 +1,5 @@
+{"event_id": "evt-01", "user_id": 1, "event_type": "page_view", "timestamp": "2023-06-01T12:00:00Z", "duration_ms": 120}
+{"event_id": "evt-02", "user_id": 2, "event_type": "click", "timestamp": "2023-06-01T12:01:00Z", "duration_ms": 45}
+{"event_id": "evt-03", "user_id": 3, "event_type": "invalid_type", "timestamp": "invalid-timestamp", "duration_ms": -10}
+{"event_id": "evt-04", "user_id": null, "event_type": "purchase", "timestamp": "2023-06-01T12:05:00Z", "duration_ms": 3500}
+{"event_id": "evt-01", "user_id": 1, "event_type": "page_view", "timestamp": "2023-06-01T12:00:00Z", "duration_ms": 120}

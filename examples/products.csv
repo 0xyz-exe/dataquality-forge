@@ -1,0 +1,8 @@
+sku,name,category,price,stock
+PROD-001,Wireless Mouse,Electronics,29.99,150
+PROD-002,Mechanical Keyboard,Electronics,89.50,45
+PROD-003,USB-C Cable,Accessories,12.00,500
+PROD-001,Wireless Mouse Duplicate,Electronics,29.99,10
+PROD-004,,Office,5.00,80
+PROD-005,Standing Desk,Furniture,-120.00,12
+PROD-006,Monitor Stand,Accessories,45.00,0

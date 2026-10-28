@@ -1,0 +1,12 @@
+id,name,email,age,country,signup_date,is_active
+1,Alice Johnson,alice@example.com,29,USA,2023-01-15,true
+2,Bob Smith,bob.smith-invalid-email,42,CAN,2023-02-20,true
+3,Charlie Brown,charlie@example.com,-5,USA,2023-03-10,false
+4,Diana Prince,diana@example.com,31,GBR,2024-05-12,true
+5,Evan Wright,,55,USA,2023-04-01,true
+6,Fiona Gallagher,fiona@example.com,22,INVALID_COUNTRY,2023-06-18,false
+7,George Clark,george@example.com,125,FRA,2023-07-22,true
+8,Hannah Abbott,hannah@example.com,28,DEU,2025-12-31,true
+9,Ian Malcolm,ian@example.com,45,USA,2023-08-05,true
+10,Julia Roberts,julia@example.com,36,CAN,2023-09-14,true
+1,Alice Johnson,alice@example.com,29,USA,2023-01-15,true

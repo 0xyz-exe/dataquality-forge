@@ -1,0 +1,45 @@
+[
+  {
+    "name": "Customer ID must not be null",
+    "rule_type": "not_null",
+    "target_columns": ["id"],
+    "severity": "CRITICAL"
+  },
+  {
+    "name": "Customer ID must be unique",
+    "rule_type": "unique_column",
+    "target_columns": ["id"],
+    "severity": "CRITICAL"
+  },
+  {
+    "name": "Email must have valid syntax",
+    "rule_type": "email_format",
+    "target_columns": ["email"],
+    "severity": "ERROR"
+  },
+  {
+    "name": "Age must be between 0 and 120",
+    "rule_type": "value_between",
+    "target_columns": ["age"],
+    "parameters": {
+      "min_value": 0,
+      "max_value": 120
+    },
+    "severity": "ERROR"
+  },
+  {
+    "name": "Country must be valid ISO code",
+    "rule_type": "in_set",
+    "target_columns": ["country"],
+    "parameters": {
+      "allowed_values": ["USA", "CAN", "GBR", "FRA", "DEU"]
+    },
+    "severity": "WARNING"
+  },
+  {
+    "name": "Signup date must not be in the future",
+    "rule_type": "not_future_date",
+    "target_columns": ["signup_date"],
+    "severity": "ERROR"
+  }
+]
