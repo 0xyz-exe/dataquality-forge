@@ -34,10 +34,18 @@ Baseline schema comparison detecting breaking column deletions, additions, and i
 
 ## 📂 Repository Details
 
-- **Repository**: [https://github.com/0xyz-exe/dataquality-forge](https://github.com/0xyz-exe/dataquality-forge)
-- **Author / Maintainer**: [0xyz-exe](https://github.com/0xyz-exe)
-- **License**: MIT Permissive Open-Source License
-- **Visibility**: Public
+| Metric / Attribute | Specification |
+|---|---|
+| **Repository Name** | `dataquality-forge` |
+| **Owner / Maintainer** | [`0xyz-exe`](https://github.com/0xyz-exe) |
+| **Repository URL** | [https://github.com/0xyz-exe/dataquality-forge](https://github.com/0xyz-exe/dataquality-forge) |
+| **Visibility** | Public (Open Source) |
+| **License** | [MIT License](LICENSE) |
+| **Default Branch** | `main` |
+| **Primary Stack** | Python 3.11+ (FastAPI, DuckDB, Pandas) & React 19 (TypeScript, Vite, Tailwind CSS v4) |
+| **Clone (HTTPS)** | `git clone https://github.com/0xyz-exe/dataquality-forge.git` |
+| **Clone (SSH)** | `git clone git@github.com:0xyz-exe/dataquality-forge.git` |
+| **Issue Tracker** | [https://github.com/0xyz-exe/dataquality-forge/issues](https://github.com/0xyz-exe/dataquality-forge/issues) |
 
 ---
 
